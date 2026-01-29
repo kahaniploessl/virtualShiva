@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <div id="unity-container" class="unity-desktop">
 
-      <div id="controls"> 
+    <div id="controls"> 
         <p> WASD / Arrows to Move | Mouse to Look | 1,2,3,4 to Generate Glitches | 5,6,7,8 to Glitch Worlds | 9,0,-,= to Glitch Avatar <br> *Click game window if controls are not working</p>
       </div>
+
       
+    <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
@@ -57,12 +58,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/VS_00_W2.loader.js";
+      var loaderUrl = buildUrl + "/VS_00_W4.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/VS_00_W2.data.br",
-        frameworkUrl: buildUrl + "/VS_00_W2.framework.js.br",
-        codeUrl: buildUrl + "/VS_00_W2.wasm.br",
+        dataUrl: buildUrl + "/VS_00_W4.data",
+        frameworkUrl: buildUrl + "/VS_00_W4.framework.js",
+        codeUrl: buildUrl + "/VS_00_W4.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Kahani",
         productName: "VS_00",
